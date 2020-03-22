@@ -7,21 +7,43 @@
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e998d7fc85.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar navbar-light bg-light navbar-expand-sm ">
+        <a href="/" class="navbar-brand">Whiskey Drop</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a href="/"></a>Home</li>
+            <li class=" nav-item mr-2"><a href="/about"></a>About</li>
+            <li class=" nav-item mr-2 d-block d-sm-none"><a href="/login">Sign Up / Sign In</a></li>
+        </ul>
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+            <a href="/login">Sign In / Sign Up</a>
+        </div>
+    </nav>
 
-    <article class="container">
+    <article class="container mt-3">
         <!--Callout-->
-        <div class="row">
+        <div class="row d-none d-sm-block">
             <div class="col-12">
-                <section class="callout">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s>£19.99</s> <strong><mark>
-                    The first order is free!</mark></strong></p>
-                    <button class=" btn btn-success btn-lg">Sign up!</button>
-                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
-                </section>
+                <div class="alert alert-warning"><strong> Sale Now On!</strong>Get a 12 month subscripton for the price of 6! <a href="/">See here for details!</a>
+                </div> 
             </div>
+        </div>
+            <div class="row">
+                <div class="col-12">
+                    <section class="callout jumbotron text-center">
+                        <h1>The finest whiskeys delivered to your doorstep.</h1>
+                        <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
+                        <s class="d-none d-sm-inline">£19.99</s>
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark>
+                        The first order is free!</mark></strong></p>
+                        <button class=" btn btn-success btn-lg">Sign up!</button>
+                        <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
+                    </section>
+                </div>
         </div>
         <!--end of .callout-->
         <hr>
@@ -34,16 +56,30 @@
                 </div>
                 <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I've been introduced to more than 10 great internation whiskeys I never knew about.</p>
-                        <p>- Jane Doe</p>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="css/images/girl-image.png" class="rounded-circle mr-3" height="100" width="100" alt="girl smiling">
+                        </div>
+                        <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                                    <p>- Jane Doe</p>
+                                </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I haven't been sober for months!</p>
-                        <p>- Jane Doe</p>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="css/images/guy-image.png" class="rounded-circle mr-3" height="100" width="100" alt="guy with sun glasses">
+                        </div>
+                        <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <p>I haven't been sober for months!</p>
+                                    <p>- Jane Doe</p>
+                                </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -52,14 +88,14 @@
         <!--Features-->
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase"> Features:</h2>
                 </div>
             </div>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="feature">
-                            <h3>Feature 1</h3>
+                            <h3><i class="fas fa-gift d-none d-sm-inline" ></i> Feature 1 <span class="badge badge-success">NEW!</span> </h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac finibus ante. Ut pretium leo odio, eu scelerisque velit cursus id. 
                                 Etiam ac risus eget ante cursus pharetra. 
@@ -70,7 +106,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
 
                         <div class="feature">
-                            <h3>Feature 2</h3>
+                            <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac finibus ante. Ut pretium leo odio, eu scelerisque velit cursus id. 
                                 Etiam ac risus eget ante cursus pharetra. 
@@ -81,7 +117,7 @@
                     <div class="col-12 d-md-none d-lg-block col-lg-4">
 
                         <div class="feature">
-                            <h3>Feature 3</h3>
+                            <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac finibus ante. Ut pretium leo odio, eu scelerisque velit cursus id. 
                                 Etiam ac risus eget ante cursus pharetra. 
