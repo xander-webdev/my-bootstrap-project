@@ -1,10 +1,28 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-.alert-container{
+.container-wrapper {
 
 }
+.container-wrapper--red {
+    background:#730101;
+    color:white;
+}
+
+.site-wide-alert {
+    border-radius:0;
+    margin-bottom:0;
+    padding:5px 15px;
+    background-color:#eec802;
+    border-color:#eec802;
+}
+.alert-container .col-12{
+    padding-left:0;
+    padding-right:0;
+    text-align: center;
+    padding-bottom:2px;
+}
+
 .callout-container{
     height:100vh;
 
@@ -37,20 +55,83 @@ body {
 .features-container{
 
 }
+
+/* Page Headers*/
+.page-header {
+    margin-bottom:0;
+    border-bottom:0;
+    text-align:center;
+}
+.page-header h2 {
+    margin-top:0;
+}
+.quotes .page-header .features {
+    margin-bottom:25px;
+}
+
 /*Block Dividers*/
 .block-divider {
     width:75px;
     height:5px;
     border:0;
+    background-color: #444;
     
 }
 .block-divider--deepred{
     background-color:#b50404;
 }
+.block-divider--white{
+    background-color:white;
+    margin-bottom: 40px;
+}
 .block-divider--short{
     width:35px;
     border-radius:20%;
 }
+/*Content Container*/
+.content-container {
+    padding-top:75px;
+    padding-bottom:75px;
+}
+/* Nav Bar Styling*/
+ .navalert-container {
+     position:absolute;
+     top:0;
+     left:0;
+     padding-left:0;
+     padding-right:0;
+     z-index: 1;
+ }
+ .navbar{
+     margin-bottom: 0;
+     border:0;
+     width:100%;
+     background-color: rgba(0,0,0,0.25);
+ }
+ .navbar .navbar-toggler{
+     border:0;
+ }
+ .navbar-brand {
+     font-weight:bold;
+     padding-right: 5px;
+ }
+ .navbar .navbar-nav a{
+     font-weight:bold;
+     text-decoration: none;
+     color:white;
+     padding-right:2px;
+     padding-left:4px;
+ }
+ 
+ .dropdown-menu{
+     background-color: rgba(0,0,0,0.75);
+     border-bottom-left-radius: 10%;
+     border-bottom-right-radius: 10%;
+ }
+ .dropdown-item a {
+     color:white;
+ }
+ 
 
 /*Jumbotron*/
 .jumbotron{
@@ -91,4 +172,23 @@ color:#a7a7a7;
     color:#FFFFFF;
     border-radius:23px;
     width:170px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom:40px;
+}
+.feature i {
+    margin-bottom:20px;
+    font-size:45px;
+    line-height:45px;
+}
+.feature .btn {
+    background-color:white;
+    border-color:white;
+    border-radius: 15px;
+    min-width:100px;
+    font-weight: bold;
+    margin-top:10px;
+    color:#730101;
 }
